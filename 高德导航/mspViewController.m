@@ -22,10 +22,16 @@
     NavigationViewController *subViewController = [[NavigationViewController alloc] init];
     
     MAMapView * mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+     mapView.showsUserLocation = YES;
+//    mapView.headingFilter = kCLHeadingFilterNone;
+     [mapView setUserTrackingMode: MAUserTrackingModeFollowWithHeading animated:YES];  //旋转
+    
     AMapSearchAPI * search = [[AMapSearchAPI alloc] initWithSearchKey:[MAMapServices sharedServices].apiKey Delegate:nil];
+    
     
     subViewController.mapView = mapView;
     subViewController.search  = search;
+   
     
 //    [self.navigationController pushViewController:(UIViewController*)subViewController animated:YES];
     [self.view addSubview:subViewController.view];
