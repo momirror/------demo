@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		724AADE718C32BA500E70266 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AADE618C32BA500E70266 /* UIKit.framework */; };
+		724AADE918C32BA500E70266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AADE818C32BA500E70266 /* Foundation.framework */; };
+		724AADEB18C32BA500E70266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AADEA18C32BA500E70266 /* CoreGraphics.framework */; };
+		724AADF118C32BA500E70266 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 724AADEF18C32BA500E70266 /* InfoPlist.strings */; };
+		724AADF318C32BA500E70266 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AADF218C32BA500E70266 /* main.m */; };
+		724AADF718C32BA500E70266 /* mspAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AADF618C32BA500E70266 /* mspAppDelegate.m */; };
+		724AADF918C32BA500E70266 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 724AADF818C32BA500E70266 /* Default.png */; };
+		724AADFB18C32BA500E70266 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724AADFA18C32BA500E70266 /* Default@2x.png */; };
+		724AADFD18C32BA500E70266 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724AADFC18C32BA500E70266 /* Default-568h@2x.png */; };
+		724AAE0018C32BA500E70266 /* mspViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AADFF18C32BA500E70266 /* mspViewController.m */; };
+		724AAE0318C32BA500E70266 /* mspViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724AAE0118C32BA500E70266 /* mspViewController.xib */; };
+		724AAE7C18C32F8800E70266 /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE1118C32F8800E70266 /* BaseMapViewController.m */; };
+		724AAE7D18C32F8800E70266 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE1318C32F8800E70266 /* MainViewController.m */; };
+		724AAE7E18C32F8800E70266 /* AddGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE1718C32F8800E70266 /* AddGestureViewController.m */; };
+		724AAE7F18C32F8800E70266 /* AnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE1918C32F8800E70266 /* AnnotationViewController.m */; };
+		724AAE8018C32F8800E70266 /* CustomAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE1B18C32F8800E70266 /* CustomAnnotationViewController.m */; };
+		724AAE8118C32F8800E70266 /* CustomOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE1D18C32F8800E70266 /* CustomOverlayViewController.m */; };
+		724AAE8218C32F8800E70266 /* GeodesicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE1F18C32F8800E70266 /* GeodesicViewController.m */; };
+		724AAE8318C32F8800E70266 /* GestureAttributesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE2118C32F8800E70266 /* GestureAttributesViewController.m */; };
+		724AAE8418C32F8800E70266 /* MapTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE2318C32F8800E70266 /* MapTypeViewController.m */; };
+		724AAE8518C32F8800E70266 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE2518C32F8800E70266 /* OverlayViewController.m */; };
+		724AAE8618C32F8800E70266 /* ScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE2718C32F8800E70266 /* ScreenshotViewController.m */; };
+		724AAE8718C32F8800E70266 /* TrafficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE2918C32F8800E70266 /* TrafficViewController.m */; };
+		724AAE8818C32F8800E70266 /* UserLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE2B18C32F8800E70266 /* UserLocationViewController.m */; };
+		724AAE8918C32F8800E70266 /* ScreenshotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE2E18C32F8800E70266 /* ScreenshotDetailViewController.m */; };
+		724AAEA118C32F8800E70266 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAE6118C32F8800E70266 /* AMapSearchKit.framework */; };
+		724AAEA218C32F8800E70266 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAE6218C32F8800E70266 /* MAMapKit.framework */; };
+		724AAEA318C32F8800E70266 /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 724AAE6418C32F8800E70266 /* endPoint.png */; };
+		724AAEA418C32F8800E70266 /* endPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724AAE6518C32F8800E70266 /* endPoint@2x.png */; };
+		724AAEA518C32F8800E70266 /* hema.png in Resources */ = {isa = PBXBuildFile; fileRef = 724AAE6618C32F8800E70266 /* hema.png */; };
+		724AAEA618C32F8800E70266 /* startPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 724AAE6718C32F8800E70266 /* startPoint.png */; };
+		724AAEA718C32F8800E70266 /* startPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724AAE6818C32F8800E70266 /* startPoint@2x.png */; };
+		724AAEA818C32F8800E70266 /* BusStopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE6B18C32F8800E70266 /* BusStopAnnotation.m */; };
+		724AAEA918C32F8800E70266 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE6D18C32F8800E70266 /* CustomAnnotationView.m */; };
+		724AAEAA18C32F8800E70266 /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE6F18C32F8800E70266 /* CustomCalloutView.m */; };
+		724AAEAB18C32F8800E70266 /* FaceOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE7118C32F8800E70266 /* FaceOverlay.m */; };
+		724AAEAC18C32F8800E70266 /* FaceOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE7318C32F8800E70266 /* FaceOverlayView.m */; };
+		724AAEAD18C32F8800E70266 /* GeocodeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE7518C32F8800E70266 /* GeocodeAnnotation.m */; };
+		724AAEAE18C32F8800E70266 /* LineDashPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE7718C32F8800E70266 /* LineDashPolyline.m */; };
+		724AAEAF18C32F8800E70266 /* POIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE7918C32F8800E70266 /* POIAnnotation.m */; };
+		724AAEB018C32F8800E70266 /* ReGeocodeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAE7B18C32F8800E70266 /* ReGeocodeAnnotation.m */; };
+		724AAEB418C3300100E70266 /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEB318C3300100E70266 /* CommonUtility.m */; };
+		724AAEB618C3305C00E70266 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAEB518C3305C00E70266 /* Security.framework */; };
+		724AAEB818C3306D00E70266 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAEB718C3306D00E70266 /* QuartzCore.framework */; };
+		724AAEBA18C3307500E70266 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAEB918C3307500E70266 /* libz.dylib */; };
+		724AAEBC18C3307F00E70266 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAEBB18C3307F00E70266 /* SystemConfiguration.framework */; };
+		724AAEBE18C3308600E70266 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAEBD18C3308600E70266 /* CoreTelephony.framework */; };
+		724AAEC018C3309100E70266 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAEBF18C3309100E70266 /* CoreLocation.framework */; };
+		724AAEC218C3309C00E70266 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AAEC118C3309C00E70266 /* libstdc++.dylib */; };
+		724AAEC518C3384D00E70266 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 724AAEC418C3384D00E70266 /* AMap.bundle */; };
+		724AAEF718C33AFF00E70266 /* BusLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEC918C33AFF00E70266 /* BusLineViewController.m */; };
+		724AAEF818C33AFF00E70266 /* BusStopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAECB18C33AFF00E70266 /* BusStopViewController.m */; };
+		724AAEF918C33AFF00E70266 /* GeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAECD18C33AFF00E70266 /* GeoViewController.m */; };
+		724AAEFA18C33AFF00E70266 /* InvertGeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAECF18C33AFF00E70266 /* InvertGeoViewController.m */; };
+		724AAEFB18C33AFF00E70266 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAED118C33AFF00E70266 /* NavigationViewController.m */; };
+		724AAEFC18C33AFF00E70266 /* PoiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAED318C33AFF00E70266 /* PoiViewController.m */; };
+		724AAEFD18C33AFF00E70266 /* AddressComponentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAED618C33AFF00E70266 /* AddressComponentDetailViewController.m */; };
+		724AAEFE18C33AFF00E70266 /* BusLineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAED818C33AFF00E70266 /* BusLineDetailViewController.m */; };
+		724AAEFF18C33AFF00E70266 /* BusStopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEDA18C33AFF00E70266 /* BusStopDetailViewController.m */; };
+		724AAF0018C33AFF00E70266 /* GeoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEDC18C33AFF00E70266 /* GeoDetailViewController.m */; };
+		724AAF0118C33AFF00E70266 /* GroupBuyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEDE18C33AFF00E70266 /* GroupBuyDetailViewController.m */; };
+		724AAF0218C33AFF00E70266 /* InvertGeoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEE018C33AFF00E70266 /* InvertGeoDetailViewController.m */; };
+		724AAF0318C33AFF00E70266 /* PathDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEE218C33AFF00E70266 /* PathDetailViewController.m */; };
+		724AAF0418C33AFF00E70266 /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEE418C33AFF00E70266 /* PoiDetailViewController.m */; };
+		724AAF0518C33AFF00E70266 /* RichContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEE618C33AFF00E70266 /* RichContentViewController.m */; };
+		724AAF0618C33AFF00E70266 /* RoadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEE818C33AFF00E70266 /* RoadDetailViewController.m */; };
+		724AAF0718C33AFF00E70266 /* RoadInterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEEA18C33AFF00E70266 /* RoadInterDetailViewController.m */; };
+		724AAF0818C33AFF00E70266 /* RouteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEEC18C33AFF00E70266 /* RouteDetailViewController.m */; };
+		724AAF0918C33AFF00E70266 /* SegmentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEEE18C33AFF00E70266 /* SegmentDetailViewController.m */; };
+		724AAF0A18C33AFF00E70266 /* StepDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEF018C33AFF00E70266 /* StepDetailViewController.m */; };
+		724AAF0B18C33AFF00E70266 /* StreetNumberDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEF218C33AFF00E70266 /* StreetNumberDetailViewController.m */; };
+		724AAF0C18C33AFF00E70266 /* TransitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEF418C33AFF00E70266 /* TransitDetailViewController.m */; };
+		724AAF0D18C33AFF00E70266 /* WalkingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAEF618C33AFF00E70266 /* WalkingDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		724AADE318C32BA500E70266 /* 高德导航.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高德导航.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		724AADE618C32BA500E70266 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		724AADE818C32BA500E70266 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		724AADEA18C32BA500E70266 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		724AADEE18C32BA500E70266 /* 高德导航-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "高德导航-Info.plist"; sourceTree = "<group>"; };
+		724AADF018C32BA500E70266 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		724AADF218C32BA500E70266 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		724AADF418C32BA500E70266 /* 高德导航-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "高德导航-Prefix.pch"; sourceTree = "<group>"; };
+		724AADF518C32BA500E70266 /* mspAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mspAppDelegate.h; sourceTree = "<group>"; };
+		724AADF618C32BA500E70266 /* mspAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mspAppDelegate.m; sourceTree = "<group>"; };
+		724AADF818C32BA500E70266 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		724AADFA18C32BA500E70266 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		724AADFC18C32BA500E70266 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		724AADFE18C32BA500E70266 /* mspViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mspViewController.h; sourceTree = "<group>"; };
+		724AADFF18C32BA500E70266 /* mspViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mspViewController.m; sourceTree = "<group>"; };
+		724AAE0218C32BA500E70266 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/mspViewController.xib; sourceTree = "<group>"; };
+		724AAE0E18C32F8800E70266 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		724AAE1018C32F8800E70266 /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapViewController.h; sourceTree = "<group>"; };
+		724AAE1118C32F8800E70266 /* BaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapViewController.m; sourceTree = "<group>"; };
+		724AAE1218C32F8800E70266 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		724AAE1318C32F8800E70266 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		724AAE1618C32F8800E70266 /* AddGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGestureViewController.h; sourceTree = "<group>"; };
+		724AAE1718C32F8800E70266 /* AddGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGestureViewController.m; sourceTree = "<group>"; };
+		724AAE1818C32F8800E70266 /* AnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationViewController.h; sourceTree = "<group>"; };
+		724AAE1918C32F8800E70266 /* AnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationViewController.m; sourceTree = "<group>"; };
+		724AAE1A18C32F8800E70266 /* CustomAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationViewController.h; sourceTree = "<group>"; };
+		724AAE1B18C32F8800E70266 /* CustomAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationViewController.m; sourceTree = "<group>"; };
+		724AAE1C18C32F8800E70266 /* CustomOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlayViewController.h; sourceTree = "<group>"; };
+		724AAE1D18C32F8800E70266 /* CustomOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOverlayViewController.m; sourceTree = "<group>"; };
+		724AAE1E18C32F8800E70266 /* GeodesicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeodesicViewController.h; sourceTree = "<group>"; };
+		724AAE1F18C32F8800E70266 /* GeodesicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeodesicViewController.m; sourceTree = "<group>"; };
+		724AAE2018C32F8800E70266 /* GestureAttributesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureAttributesViewController.h; sourceTree = "<group>"; };
+		724AAE2118C32F8800E70266 /* GestureAttributesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureAttributesViewController.m; sourceTree = "<group>"; };
+		724AAE2218C32F8800E70266 /* MapTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTypeViewController.h; sourceTree = "<group>"; };
+		724AAE2318C32F8800E70266 /* MapTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTypeViewController.m; sourceTree = "<group>"; };
+		724AAE2418C32F8800E70266 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
+		724AAE2518C32F8800E70266 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
+		724AAE2618C32F8800E70266 /* ScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenshotViewController.h; sourceTree = "<group>"; };
+		724AAE2718C32F8800E70266 /* ScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenshotViewController.m; sourceTree = "<group>"; };
+		724AAE2818C32F8800E70266 /* TrafficViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficViewController.h; sourceTree = "<group>"; };
+		724AAE2918C32F8800E70266 /* TrafficViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficViewController.m; sourceTree = "<group>"; };
+		724AAE2A18C32F8800E70266 /* UserLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationViewController.h; sourceTree = "<group>"; };
+		724AAE2B18C32F8800E70266 /* UserLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationViewController.m; sourceTree = "<group>"; };
+		724AAE2D18C32F8800E70266 /* ScreenshotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenshotDetailViewController.h; sourceTree = "<group>"; };
+		724AAE2E18C32F8800E70266 /* ScreenshotDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenshotDetailViewController.m; sourceTree = "<group>"; };
+		724AAE6118C32F8800E70266 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		724AAE6218C32F8800E70266 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		724AAE6418C32F8800E70266 /* endPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endPoint.png; sourceTree = "<group>"; };
+		724AAE6518C32F8800E70266 /* endPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "endPoint@2x.png"; sourceTree = "<group>"; };
+		724AAE6618C32F8800E70266 /* hema.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hema.png; sourceTree = "<group>"; };
+		724AAE6718C32F8800E70266 /* startPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startPoint.png; sourceTree = "<group>"; };
+		724AAE6818C32F8800E70266 /* startPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startPoint@2x.png"; sourceTree = "<group>"; };
+		724AAE6A18C32F8800E70266 /* BusStopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopAnnotation.h; sourceTree = "<group>"; };
+		724AAE6B18C32F8800E70266 /* BusStopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopAnnotation.m; sourceTree = "<group>"; };
+		724AAE6C18C32F8800E70266 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
+		724AAE6D18C32F8800E70266 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		724AAE6E18C32F8800E70266 /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		724AAE6F18C32F8800E70266 /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		724AAE7018C32F8800E70266 /* FaceOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceOverlay.h; sourceTree = "<group>"; };
+		724AAE7118C32F8800E70266 /* FaceOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceOverlay.m; sourceTree = "<group>"; };
+		724AAE7218C32F8800E70266 /* FaceOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceOverlayView.h; sourceTree = "<group>"; };
+		724AAE7318C32F8800E70266 /* FaceOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceOverlayView.m; sourceTree = "<group>"; };
+		724AAE7418C32F8800E70266 /* GeocodeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeocodeAnnotation.h; sourceTree = "<group>"; };
+		724AAE7518C32F8800E70266 /* GeocodeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeocodeAnnotation.m; sourceTree = "<group>"; };
+		724AAE7618C32F8800E70266 /* LineDashPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDashPolyline.h; sourceTree = "<group>"; };
+		724AAE7718C32F8800E70266 /* LineDashPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineDashPolyline.m; sourceTree = "<group>"; };
+		724AAE7818C32F8800E70266 /* POIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIAnnotation.h; sourceTree = "<group>"; };
+		724AAE7918C32F8800E70266 /* POIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIAnnotation.m; sourceTree = "<group>"; };
+		724AAE7A18C32F8800E70266 /* ReGeocodeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReGeocodeAnnotation.h; sourceTree = "<group>"; };
+		724AAE7B18C32F8800E70266 /* ReGeocodeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReGeocodeAnnotation.m; sourceTree = "<group>"; };
+		724AAEB218C3300100E70266 /* CommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
+		724AAEB318C3300100E70266 /* CommonUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtility.m; sourceTree = "<group>"; };
+		724AAEB518C3305C00E70266 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		724AAEB718C3306D00E70266 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		724AAEB918C3307500E70266 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		724AAEBB18C3307F00E70266 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		724AAEBD18C3308600E70266 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		724AAEBF18C3309100E70266 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		724AAEC118C3309C00E70266 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		724AAEC418C3384D00E70266 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = sdk/Extern/MAMapKit.framework/Versions/2.1.2/Resources/AMap.bundle; sourceTree = SOURCE_ROOT; };
+		724AAEC818C33AFF00E70266 /* BusLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusLineViewController.h; sourceTree = "<group>"; };
+		724AAEC918C33AFF00E70266 /* BusLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusLineViewController.m; sourceTree = "<group>"; };
+		724AAECA18C33AFF00E70266 /* BusStopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopViewController.h; sourceTree = "<group>"; };
+		724AAECB18C33AFF00E70266 /* BusStopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopViewController.m; sourceTree = "<group>"; };
+		724AAECC18C33AFF00E70266 /* GeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoViewController.h; sourceTree = "<group>"; };
+		724AAECD18C33AFF00E70266 /* GeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoViewController.m; sourceTree = "<group>"; };
+		724AAECE18C33AFF00E70266 /* InvertGeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvertGeoViewController.h; sourceTree = "<group>"; };
+		724AAECF18C33AFF00E70266 /* InvertGeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvertGeoViewController.m; sourceTree = "<group>"; };
+		724AAED018C33AFF00E70266 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		724AAED118C33AFF00E70266 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		724AAED218C33AFF00E70266 /* PoiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiViewController.h; sourceTree = "<group>"; };
+		724AAED318C33AFF00E70266 /* PoiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiViewController.m; sourceTree = "<group>"; };
+		724AAED518C33AFF00E70266 /* AddressComponentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressComponentDetailViewController.h; sourceTree = "<group>"; };
+		724AAED618C33AFF00E70266 /* AddressComponentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressComponentDetailViewController.m; sourceTree = "<group>"; };
+		724AAED718C33AFF00E70266 /* BusLineDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusLineDetailViewController.h; sourceTree = "<group>"; };
+		724AAED818C33AFF00E70266 /* BusLineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusLineDetailViewController.m; sourceTree = "<group>"; };
+		724AAED918C33AFF00E70266 /* BusStopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopDetailViewController.h; sourceTree = "<group>"; };
+		724AAEDA18C33AFF00E70266 /* BusStopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopDetailViewController.m; sourceTree = "<group>"; };
+		724AAEDB18C33AFF00E70266 /* GeoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoDetailViewController.h; sourceTree = "<group>"; };
+		724AAEDC18C33AFF00E70266 /* GeoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoDetailViewController.m; sourceTree = "<group>"; };
+		724AAEDD18C33AFF00E70266 /* GroupBuyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupBuyDetailViewController.h; sourceTree = "<group>"; };
+		724AAEDE18C33AFF00E70266 /* GroupBuyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupBuyDetailViewController.m; sourceTree = "<group>"; };
+		724AAEDF18C33AFF00E70266 /* InvertGeoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvertGeoDetailViewController.h; sourceTree = "<group>"; };
+		724AAEE018C33AFF00E70266 /* InvertGeoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvertGeoDetailViewController.m; sourceTree = "<group>"; };
+		724AAEE118C33AFF00E70266 /* PathDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathDetailViewController.h; sourceTree = "<group>"; };
+		724AAEE218C33AFF00E70266 /* PathDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathDetailViewController.m; sourceTree = "<group>"; };
+		724AAEE318C33AFF00E70266 /* PoiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailViewController.h; sourceTree = "<group>"; };
+		724AAEE418C33AFF00E70266 /* PoiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailViewController.m; sourceTree = "<group>"; };
+		724AAEE518C33AFF00E70266 /* RichContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichContentViewController.h; sourceTree = "<group>"; };
+		724AAEE618C33AFF00E70266 /* RichContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichContentViewController.m; sourceTree = "<group>"; };
+		724AAEE718C33AFF00E70266 /* RoadDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadDetailViewController.h; sourceTree = "<group>"; };
+		724AAEE818C33AFF00E70266 /* RoadDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadDetailViewController.m; sourceTree = "<group>"; };
+		724AAEE918C33AFF00E70266 /* RoadInterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadInterDetailViewController.h; sourceTree = "<group>"; };
+		724AAEEA18C33AFF00E70266 /* RoadInterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadInterDetailViewController.m; sourceTree = "<group>"; };
+		724AAEEB18C33AFF00E70266 /* RouteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteDetailViewController.h; sourceTree = "<group>"; };
+		724AAEEC18C33AFF00E70266 /* RouteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteDetailViewController.m; sourceTree = "<group>"; };
+		724AAEED18C33AFF00E70266 /* SegmentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentDetailViewController.h; sourceTree = "<group>"; };
+		724AAEEE18C33AFF00E70266 /* SegmentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentDetailViewController.m; sourceTree = "<group>"; };
+		724AAEEF18C33AFF00E70266 /* StepDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepDetailViewController.h; sourceTree = "<group>"; };
+		724AAEF018C33AFF00E70266 /* StepDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepDetailViewController.m; sourceTree = "<group>"; };
+		724AAEF118C33AFF00E70266 /* StreetNumberDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetNumberDetailViewController.h; sourceTree = "<group>"; };
+		724AAEF218C33AFF00E70266 /* StreetNumberDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetNumberDetailViewController.m; sourceTree = "<group>"; };
+		724AAEF318C33AFF00E70266 /* TransitDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitDetailViewController.h; sourceTree = "<group>"; };
+		724AAEF418C33AFF00E70266 /* TransitDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitDetailViewController.m; sourceTree = "<group>"; };
+		724AAEF518C33AFF00E70266 /* WalkingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkingDetailViewController.h; sourceTree = "<group>"; };
+		724AAEF618C33AFF00E70266 /* WalkingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkingDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		724AADE018C32BA500E70266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724AAEA118C32F8800E70266 /* AMapSearchKit.framework in Frameworks */,
+				724AAEA218C32F8800E70266 /* MAMapKit.framework in Frameworks */,
+				724AAEC218C3309C00E70266 /* libstdc++.dylib in Frameworks */,
+				724AAEC018C3309100E70266 /* CoreLocation.framework in Frameworks */,
+				724AAEBE18C3308600E70266 /* CoreTelephony.framework in Frameworks */,
+				724AAEBC18C3307F00E70266 /* SystemConfiguration.framework in Frameworks */,
+				724AAEBA18C3307500E70266 /* libz.dylib in Frameworks */,
+				724AAEB818C3306D00E70266 /* QuartzCore.framework in Frameworks */,
+				724AAEB618C3305C00E70266 /* Security.framework in Frameworks */,
+				724AADE718C32BA500E70266 /* UIKit.framework in Frameworks */,
+				724AADE918C32BA500E70266 /* Foundation.framework in Frameworks */,
+				724AADEB18C32BA500E70266 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		724AADDA18C32BA500E70266 = {
+			isa = PBXGroup;
+			children = (
+				724AAE0918C32EBA00E70266 /* sdk */,
+				724AADEC18C32BA500E70266 /* 高德导航 */,
+				724AADE518C32BA500E70266 /* Frameworks */,
+				724AADE418C32BA500E70266 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		724AADE418C32BA500E70266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				724AADE318C32BA500E70266 /* 高德导航.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		724AADE518C32BA500E70266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724AAEC118C3309C00E70266 /* libstdc++.dylib */,
+				724AAEBF18C3309100E70266 /* CoreLocation.framework */,
+				724AAEBD18C3308600E70266 /* CoreTelephony.framework */,
+				724AAEBB18C3307F00E70266 /* SystemConfiguration.framework */,
+				724AAEB918C3307500E70266 /* libz.dylib */,
+				724AAEB718C3306D00E70266 /* QuartzCore.framework */,
+				724AAEB518C3305C00E70266 /* Security.framework */,
+				724AADE618C32BA500E70266 /* UIKit.framework */,
+				724AADE818C32BA500E70266 /* Foundation.framework */,
+				724AADEA18C32BA500E70266 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		724AADEC18C32BA500E70266 /* 高德导航 */ = {
+			isa = PBXGroup;
+			children = (
+				724AADF518C32BA500E70266 /* mspAppDelegate.h */,
+				724AADF618C32BA500E70266 /* mspAppDelegate.m */,
+				724AADFE18C32BA500E70266 /* mspViewController.h */,
+				724AADFF18C32BA500E70266 /* mspViewController.m */,
+				724AAE0118C32BA500E70266 /* mspViewController.xib */,
+				724AADED18C32BA500E70266 /* Supporting Files */,
+			);
+			path = "高德导航";
+			sourceTree = "<group>";
+		};
+		724AADED18C32BA500E70266 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				724AAEC418C3384D00E70266 /* AMap.bundle */,
+				724AADEE18C32BA500E70266 /* 高德导航-Info.plist */,
+				724AADEF18C32BA500E70266 /* InfoPlist.strings */,
+				724AADF218C32BA500E70266 /* main.m */,
+				724AADF418C32BA500E70266 /* 高德导航-Prefix.pch */,
+				724AADF818C32BA500E70266 /* Default.png */,
+				724AADFA18C32BA500E70266 /* Default@2x.png */,
+				724AADFC18C32BA500E70266 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		724AAE0918C32EBA00E70266 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				724AAEB118C3300100E70266 /* Utility */,
+				724AAE0D18C32F8800E70266 /* Configuration */,
+				724AAE0F18C32F8800E70266 /* Controllers */,
+				724AAE6018C32F8800E70266 /* Extern */,
+				724AAE6318C32F8800E70266 /* Images */,
+				724AAE6918C32F8800E70266 /* Models */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		724AAE0D18C32F8800E70266 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				724AAE0E18C32F8800E70266 /* APIKey.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		724AAE0F18C32F8800E70266 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				724AAEC618C33AFF00E70266 /* SearchControllers */,
+				724AAE1018C32F8800E70266 /* BaseMapViewController.h */,
+				724AAE1118C32F8800E70266 /* BaseMapViewController.m */,
+				724AAE1218C32F8800E70266 /* MainViewController.h */,
+				724AAE1318C32F8800E70266 /* MainViewController.m */,
+				724AAE1418C32F8800E70266 /* MapControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		724AAE1418C32F8800E70266 /* MapControllers */ = {
+			isa = PBXGroup;
+			children = (
+				724AAE1518C32F8800E70266 /* MapBaseControllers */,
+				724AAE2C18C32F8800E70266 /* MapDetailControllers */,
+			);
+			path = MapControllers;
+			sourceTree = "<group>";
+		};
+		724AAE1518C32F8800E70266 /* MapBaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				724AAE1618C32F8800E70266 /* AddGestureViewController.h */,
+				724AAE1718C32F8800E70266 /* AddGestureViewController.m */,
+				724AAE1818C32F8800E70266 /* AnnotationViewController.h */,
+				724AAE1918C32F8800E70266 /* AnnotationViewController.m */,
+				724AAE1A18C32F8800E70266 /* CustomAnnotationViewController.h */,
+				724AAE1B18C32F8800E70266 /* CustomAnnotationViewController.m */,
+				724AAE1C18C32F8800E70266 /* CustomOverlayViewController.h */,
+				724AAE1D18C32F8800E70266 /* CustomOverlayViewController.m */,
+				724AAE1E18C32F8800E70266 /* GeodesicViewController.h */,
+				724AAE1F18C32F8800E70266 /* GeodesicViewController.m */,
+				724AAE2018C32F8800E70266 /* GestureAttributesViewController.h */,
+				724AAE2118C32F8800E70266 /* GestureAttributesViewController.m */,
+				724AAE2218C32F8800E70266 /* MapTypeViewController.h */,
+				724AAE2318C32F8800E70266 /* MapTypeViewController.m */,
+				724AAE2418C32F8800E70266 /* OverlayViewController.h */,
+				724AAE2518C32F8800E70266 /* OverlayViewController.m */,
+				724AAE2618C32F8800E70266 /* ScreenshotViewController.h */,
+				724AAE2718C32F8800E70266 /* ScreenshotViewController.m */,
+				724AAE2818C32F8800E70266 /* TrafficViewController.h */,
+				724AAE2918C32F8800E70266 /* TrafficViewController.m */,
+				724AAE2A18C32F8800E70266 /* UserLocationViewController.h */,
+				724AAE2B18C32F8800E70266 /* UserLocationViewController.m */,
+			);
+			path = MapBaseControllers;
+			sourceTree = "<group>";
+		};
+		724AAE2C18C32F8800E70266 /* MapDetailControllers */ = {
+			isa = PBXGroup;
+			children = (
+				724AAE2D18C32F8800E70266 /* ScreenshotDetailViewController.h */,
+				724AAE2E18C32F8800E70266 /* ScreenshotDetailViewController.m */,
+			);
+			path = MapDetailControllers;
+			sourceTree = "<group>";
+		};
+		724AAE6018C32F8800E70266 /* Extern */ = {
+			isa = PBXGroup;
+			children = (
+				724AAE6118C32F8800E70266 /* AMapSearchKit.framework */,
+				724AAE6218C32F8800E70266 /* MAMapKit.framework */,
+			);
+			path = Extern;
+			sourceTree = "<group>";
+		};
+		724AAE6318C32F8800E70266 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				724AAE6418C32F8800E70266 /* endPoint.png */,
+				724AAE6518C32F8800E70266 /* endPoint@2x.png */,
+				724AAE6618C32F8800E70266 /* hema.png */,
+				724AAE6718C32F8800E70266 /* startPoint.png */,
+				724AAE6818C32F8800E70266 /* startPoint@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		724AAE6918C32F8800E70266 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				724AAE6A18C32F8800E70266 /* BusStopAnnotation.h */,
+				724AAE6B18C32F8800E70266 /* BusStopAnnotation.m */,
+				724AAE6C18C32F8800E70266 /* CustomAnnotationView.h */,
+				724AAE6D18C32F8800E70266 /* CustomAnnotationView.m */,
+				724AAE6E18C32F8800E70266 /* CustomCalloutView.h */,
+				724AAE6F18C32F8800E70266 /* CustomCalloutView.m */,
+				724AAE7018C32F8800E70266 /* FaceOverlay.h */,
+				724AAE7118C32F8800E70266 /* FaceOverlay.m */,
+				724AAE7218C32F8800E70266 /* FaceOverlayView.h */,
+				724AAE7318C32F8800E70266 /* FaceOverlayView.m */,
+				724AAE7418C32F8800E70266 /* GeocodeAnnotation.h */,
+				724AAE7518C32F8800E70266 /* GeocodeAnnotation.m */,
+				724AAE7618C32F8800E70266 /* LineDashPolyline.h */,
+				724AAE7718C32F8800E70266 /* LineDashPolyline.m */,
+				724AAE7818C32F8800E70266 /* POIAnnotation.h */,
+				724AAE7918C32F8800E70266 /* POIAnnotation.m */,
+				724AAE7A18C32F8800E70266 /* ReGeocodeAnnotation.h */,
+				724AAE7B18C32F8800E70266 /* ReGeocodeAnnotation.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		724AAEB118C3300100E70266 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				724AAEB218C3300100E70266 /* CommonUtility.h */,
+				724AAEB318C3300100E70266 /* CommonUtility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		724AAEC618C33AFF00E70266 /* SearchControllers */ = {
+			isa = PBXGroup;
+			children = (
+				724AAEC718C33AFF00E70266 /* SearchBaseControllers */,
+				724AAED418C33AFF00E70266 /* SearchDetailControllers */,
+			);
+			path = SearchControllers;
+			sourceTree = "<group>";
+		};
+		724AAEC718C33AFF00E70266 /* SearchBaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				724AAEC818C33AFF00E70266 /* BusLineViewController.h */,
+				724AAEC918C33AFF00E70266 /* BusLineViewController.m */,
+				724AAECA18C33AFF00E70266 /* BusStopViewController.h */,
+				724AAECB18C33AFF00E70266 /* BusStopViewController.m */,
+				724AAECC18C33AFF00E70266 /* GeoViewController.h */,
+				724AAECD18C33AFF00E70266 /* GeoViewController.m */,
+				724AAECE18C33AFF00E70266 /* InvertGeoViewController.h */,
+				724AAECF18C33AFF00E70266 /* InvertGeoViewController.m */,
+				724AAED018C33AFF00E70266 /* NavigationViewController.h */,
+				724AAED118C33AFF00E70266 /* NavigationViewController.m */,
+				724AAED218C33AFF00E70266 /* PoiViewController.h */,
+				724AAED318C33AFF00E70266 /* PoiViewController.m */,
+			);
+			path = SearchBaseControllers;
+			sourceTree = "<group>";
+		};
+		724AAED418C33AFF00E70266 /* SearchDetailControllers */ = {
+			isa = PBXGroup;
+			children = (
+				724AAED518C33AFF00E70266 /* AddressComponentDetailViewController.h */,
+				724AAED618C33AFF00E70266 /* AddressComponentDetailViewController.m */,
+				724AAED718C33AFF00E70266 /* BusLineDetailViewController.h */,
+				724AAED818C33AFF00E70266 /* BusLineDetailViewController.m */,
+				724AAED918C33AFF00E70266 /* BusStopDetailViewController.h */,
+				724AAEDA18C33AFF00E70266 /* BusStopDetailViewController.m */,
+				724AAEDB18C33AFF00E70266 /* GeoDetailViewController.h */,
+				724AAEDC18C33AFF00E70266 /* GeoDetailViewController.m */,
+				724AAEDD18C33AFF00E70266 /* GroupBuyDetailViewController.h */,
+				724AAEDE18C33AFF00E70266 /* GroupBuyDetailViewController.m */,
+				724AAEDF18C33AFF00E70266 /* InvertGeoDetailViewController.h */,
+				724AAEE018C33AFF00E70266 /* InvertGeoDetailViewController.m */,
+				724AAEE118C33AFF00E70266 /* PathDetailViewController.h */,
+				724AAEE218C33AFF00E70266 /* PathDetailViewController.m */,
+				724AAEE318C33AFF00E70266 /* PoiDetailViewController.h */,
+				724AAEE418C33AFF00E70266 /* PoiDetailViewController.m */,
+				724AAEE518C33AFF00E70266 /* RichContentViewController.h */,
+				724AAEE618C33AFF00E70266 /* RichContentViewController.m */,
+				724AAEE718C33AFF00E70266 /* RoadDetailViewController.h */,
+				724AAEE818C33AFF00E70266 /* RoadDetailViewController.m */,
+				724AAEE918C33AFF00E70266 /* RoadInterDetailViewController.h */,
+				724AAEEA18C33AFF00E70266 /* RoadInterDetailViewController.m */,
+				724AAEEB18C33AFF00E70266 /* RouteDetailViewController.h */,
+				724AAEEC18C33AFF00E70266 /* RouteDetailViewController.m */,
+				724AAEED18C33AFF00E70266 /* SegmentDetailViewController.h */,
+				724AAEEE18C33AFF00E70266 /* SegmentDetailViewController.m */,
+				724AAEEF18C33AFF00E70266 /* StepDetailViewController.h */,
+				724AAEF018C33AFF00E70266 /* StepDetailViewController.m */,
+				724AAEF118C33AFF00E70266 /* StreetNumberDetailViewController.h */,
+				724AAEF218C33AFF00E70266 /* StreetNumberDetailViewController.m */,
+				724AAEF318C33AFF00E70266 /* TransitDetailViewController.h */,
+				724AAEF418C33AFF00E70266 /* TransitDetailViewController.m */,
+				724AAEF518C33AFF00E70266 /* WalkingDetailViewController.h */,
+				724AAEF618C33AFF00E70266 /* WalkingDetailViewController.m */,
+			);
+			path = SearchDetailControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		724AADE218C32BA500E70266 /* 高德导航 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 724AAE0618C32BA500E70266 /* Build configuration list for PBXNativeTarget "高德导航" */;
+			buildPhases = (
+				724AADDF18C32BA500E70266 /* Sources */,
+				724AADE018C32BA500E70266 /* Frameworks */,
+				724AADE118C32BA500E70266 /* Resources */,
+				724AAEC318C3334500E70266 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "高德导航";
+			productName = "高德导航";
+			productReference = 724AADE318C32BA500E70266 /* 高德导航.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		724AADDB18C32BA500E70266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = msp;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = msp;
+			};
+			buildConfigurationList = 724AADDE18C32BA500E70266 /* Build configuration list for PBXProject "高德导航" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 724AADDA18C32BA500E70266;
+			productRefGroup = 724AADE418C32BA500E70266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				724AADE218C32BA500E70266 /* 高德导航 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		724AADE118C32BA500E70266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724AADF118C32BA500E70266 /* InfoPlist.strings in Resources */,
+				724AADF918C32BA500E70266 /* Default.png in Resources */,
+				724AADFB18C32BA500E70266 /* Default@2x.png in Resources */,
+				724AADFD18C32BA500E70266 /* Default-568h@2x.png in Resources */,
+				724AAE0318C32BA500E70266 /* mspViewController.xib in Resources */,
+				724AAEA318C32F8800E70266 /* endPoint.png in Resources */,
+				724AAEA418C32F8800E70266 /* endPoint@2x.png in Resources */,
+				724AAEA518C32F8800E70266 /* hema.png in Resources */,
+				724AAEA618C32F8800E70266 /* startPoint.png in Resources */,
+				724AAEA718C32F8800E70266 /* startPoint@2x.png in Resources */,
+				724AAEC518C3384D00E70266 /* AMap.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		724AAEC318C3334500E70266 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\n\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\n\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		724AADDF18C32BA500E70266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724AADF318C32BA500E70266 /* main.m in Sources */,
+				724AADF718C32BA500E70266 /* mspAppDelegate.m in Sources */,
+				724AAE0018C32BA500E70266 /* mspViewController.m in Sources */,
+				724AAE7C18C32F8800E70266 /* BaseMapViewController.m in Sources */,
+				724AAE7D18C32F8800E70266 /* MainViewController.m in Sources */,
+				724AAE7E18C32F8800E70266 /* AddGestureViewController.m in Sources */,
+				724AAE7F18C32F8800E70266 /* AnnotationViewController.m in Sources */,
+				724AAE8018C32F8800E70266 /* CustomAnnotationViewController.m in Sources */,
+				724AAE8118C32F8800E70266 /* CustomOverlayViewController.m in Sources */,
+				724AAE8218C32F8800E70266 /* GeodesicViewController.m in Sources */,
+				724AAE8318C32F8800E70266 /* GestureAttributesViewController.m in Sources */,
+				724AAE8418C32F8800E70266 /* MapTypeViewController.m in Sources */,
+				724AAE8518C32F8800E70266 /* OverlayViewController.m in Sources */,
+				724AAE8618C32F8800E70266 /* ScreenshotViewController.m in Sources */,
+				724AAE8718C32F8800E70266 /* TrafficViewController.m in Sources */,
+				724AAE8818C32F8800E70266 /* UserLocationViewController.m in Sources */,
+				724AAE8918C32F8800E70266 /* ScreenshotDetailViewController.m in Sources */,
+				724AAEA818C32F8800E70266 /* BusStopAnnotation.m in Sources */,
+				724AAEA918C32F8800E70266 /* CustomAnnotationView.m in Sources */,
+				724AAEAA18C32F8800E70266 /* CustomCalloutView.m in Sources */,
+				724AAEAB18C32F8800E70266 /* FaceOverlay.m in Sources */,
+				724AAEAC18C32F8800E70266 /* FaceOverlayView.m in Sources */,
+				724AAEAD18C32F8800E70266 /* GeocodeAnnotation.m in Sources */,
+				724AAEAE18C32F8800E70266 /* LineDashPolyline.m in Sources */,
+				724AAEAF18C32F8800E70266 /* POIAnnotation.m in Sources */,
+				724AAEB018C32F8800E70266 /* ReGeocodeAnnotation.m in Sources */,
+				724AAEB418C3300100E70266 /* CommonUtility.m in Sources */,
+				724AAEF718C33AFF00E70266 /* BusLineViewController.m in Sources */,
+				724AAEF818C33AFF00E70266 /* BusStopViewController.m in Sources */,
+				724AAEF918C33AFF00E70266 /* GeoViewController.m in Sources */,
+				724AAEFA18C33AFF00E70266 /* InvertGeoViewController.m in Sources */,
+				724AAEFB18C33AFF00E70266 /* NavigationViewController.m in Sources */,
+				724AAEFC18C33AFF00E70266 /* PoiViewController.m in Sources */,
+				724AAEFD18C33AFF00E70266 /* AddressComponentDetailViewController.m in Sources */,
+				724AAEFE18C33AFF00E70266 /* BusLineDetailViewController.m in Sources */,
+				724AAEFF18C33AFF00E70266 /* BusStopDetailViewController.m in Sources */,
+				724AAF0018C33AFF00E70266 /* GeoDetailViewController.m in Sources */,
+				724AAF0118C33AFF00E70266 /* GroupBuyDetailViewController.m in Sources */,
+				724AAF0218C33AFF00E70266 /* InvertGeoDetailViewController.m in Sources */,
+				724AAF0318C33AFF00E70266 /* PathDetailViewController.m in Sources */,
+				724AAF0418C33AFF00E70266 /* PoiDetailViewController.m in Sources */,
+				724AAF0518C33AFF00E70266 /* RichContentViewController.m in Sources */,
+				724AAF0618C33AFF00E70266 /* RoadDetailViewController.m in Sources */,
+				724AAF0718C33AFF00E70266 /* RoadInterDetailViewController.m in Sources */,
+				724AAF0818C33AFF00E70266 /* RouteDetailViewController.m in Sources */,
+				724AAF0918C33AFF00E70266 /* SegmentDetailViewController.m in Sources */,
+				724AAF0A18C33AFF00E70266 /* StepDetailViewController.m in Sources */,
+				724AAF0B18C33AFF00E70266 /* StreetNumberDetailViewController.m in Sources */,
+				724AAF0C18C33AFF00E70266 /* TransitDetailViewController.m in Sources */,
+				724AAF0D18C33AFF00E70266 /* WalkingDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		724AADEF18C32BA500E70266 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				724AADF018C32BA500E70266 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		724AAE0118C32BA500E70266 /* mspViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				724AAE0218C32BA500E70266 /* en */,
+			);
+			name = mspViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		724AAE0418C32BA500E70266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		724AAE0518C32BA500E70266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		724AAE0718C32BA500E70266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/sdk/Extern\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "高德导航/高德导航-Prefix.pch";
+				INFOPLIST_FILE = "高德导航/高德导航-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		724AAE0818C32BA500E70266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/sdk/Extern\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "高德导航/高德导航-Prefix.pch";
+				INFOPLIST_FILE = "高德导航/高德导航-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		724AADDE18C32BA500E70266 /* Build configuration list for PBXProject "高德导航" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724AAE0418C32BA500E70266 /* Debug */,
+				724AAE0518C32BA500E70266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		724AAE0618C32BA500E70266 /* Build configuration list for PBXNativeTarget "高德导航" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724AAE0718C32BA500E70266 /* Debug */,
+				724AAE0818C32BA500E70266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 724AADDB18C32BA500E70266 /* Project object */;
+}
