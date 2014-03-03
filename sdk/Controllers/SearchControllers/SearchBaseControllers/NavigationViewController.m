@@ -432,6 +432,7 @@ const NSString *NavigationViewControllerDestinationTitle = @"终点";
     self.nextItem = nextItem;
     
     self.toolbarItems = [NSArray arrayWithObjects:flexbleItem, searchTypeItem, flexbleItem, previousItem, flexbleItem, nextItem, flexbleItem, nil];
+
 }
 
 - (void)addDefaultAnnotations

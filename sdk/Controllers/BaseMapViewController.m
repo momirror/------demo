@@ -54,7 +54,6 @@
 {
     self.mapView.frame = self.view.bounds;
     
-    NSLog(@"mapView frame->%@",NSStringFromCGRect(self.mapView.frame));
     
     self.mapView.delegate = self;
     

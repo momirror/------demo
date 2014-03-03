@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseMapViewController.h"
 
-@interface mspViewController : UIViewController
+@interface mspViewController : BaseMapViewController
+{
+    MAAnnotationView * _myAnnotationView;
+}
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1868E0EC18C45A84003FCA7B /* avatar_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1868E0EB18C45A84003FCA7B /* avatar_1.png */; };
 		724AADE718C32BA500E70266 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AADE618C32BA500E70266 /* UIKit.framework */; };
 		724AADE918C32BA500E70266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AADE818C32BA500E70266 /* Foundation.framework */; };
 		724AADEB18C32BA500E70266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AADEA18C32BA500E70266 /* CoreGraphics.framework */; };
@@ -83,6 +84,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1868E0EB18C45A84003FCA7B /* avatar_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_1.png; sourceTree = "<group>"; };
 		724AADE318C32BA500E70266 /* 高德导航.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高德导航.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AADE618C32BA500E70266 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		724AADE818C32BA500E70266 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -285,6 +287,7 @@
 		724AADED18C32BA500E70266 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1868E0EB18C45A84003FCA7B /* avatar_1.png */,
 				724AAEC418C3384D00E70266 /* AMap.bundle */,
 				724AADEE18C32BA500E70266 /* 高德导航-Info.plist */,
 				724AADEF18C32BA500E70266 /* InfoPlist.strings */,
@@ -557,6 +560,7 @@
 			files = (
 				724AADF118C32BA500E70266 /* InfoPlist.strings in Resources */,
 				724AADF918C32BA500E70266 /* Default.png in Resources */,
+				1868E0EC18C45A84003FCA7B /* avatar_1.png in Resources */,
 				724AADFB18C32BA500E70266 /* Default@2x.png in Resources */,
 				724AADFD18C32BA500E70266 /* Default-568h@2x.png in Resources */,
 				724AAE0318C32BA500E70266 /* mspViewController.xib in Resources */,
@@ -774,6 +778,7 @@
 				724AAE0818C32BA500E70266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
